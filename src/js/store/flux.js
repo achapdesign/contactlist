@@ -3,16 +3,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			contacts:[
 				{
-					"full_name": "Dave Bradley",
-					"email": "dave@gmail.com",
-					"agenda_slug": "my_super_agenda",
-					"address":"47568 NW 34ST, 33434 FL, USA",
-					"phone":"7864445566"
+					name: "Dave Bradley",
+					email: "dave@gmail.com",
+					agenda_slug: "my_super_agenda",
+					address:"47568 NW 34ST, 33434 FL, USA",
+					phone:"7864445566"
 				}
 			]
 		},
 		actions: {
-			addNewContact: (name) => {
+			addContact: (name) => {
 				const contacts = getStore().contacts;
 
 				let higherId = 0;
